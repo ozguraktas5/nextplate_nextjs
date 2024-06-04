@@ -1,0 +1,12 @@
+@import "bootstrap/scss/bootstrap";
+
+.navbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    .navbar-collapse {
+        margin-left: 8rem;
+        .nav-link{
+            margin-left: 1rem;
+        }    
+    }
+}
