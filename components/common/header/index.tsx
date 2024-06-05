@@ -5,6 +5,7 @@ import menuItems from "./menu.json";
 import Image from "next/image";
 import Link from "next/link";
 import SearchModal from "@/components/SearchModal";
+import { ModeToggle } from "@/components/ModeToggle";
 
 const Header = () => {
   return (
@@ -38,6 +39,7 @@ const Header = () => {
         </Navbar.Collapse>
 
         <SearchModal />
+        <ModeToggle />
       </Container>
     </Navbar>
   );
