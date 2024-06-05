@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <Navbar expand="lg" bg="white" data-bs-theme="white" collapseOnSelect>
+    <Navbar className="footer" expand="lg" bg="white" data-bs-theme="white" collapseOnSelect>
       <Container>
         <Navbar.Brand href="/" as={Link}>
           <Image

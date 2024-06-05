@@ -1,15 +1,21 @@
 @import "bootstrap/scss/bootstrap";
 
 .navbar {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    
-    .navbar-collapse {
-        margin-left: 8rem;
-        .nav-link{
-            margin-left: 1.5rem;
-            color: black;
-            font-weight: bold;
-        }    
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  .navbar-collapse {
+    margin-left: 8rem;
+    .nav-link {
+      margin-left: 1.5rem;
+      color: black;
+      font-weight: bold;
     }
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
