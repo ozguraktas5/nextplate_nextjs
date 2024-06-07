@@ -55,7 +55,7 @@ const Header = () => {
         <SearchModal />
         <ModeToggle />
         <SelectDemo />
-        <ButtonOutline />
+        <ButtonOutline text="Get Started" />
       </Container>
     </Navbar>
   );
