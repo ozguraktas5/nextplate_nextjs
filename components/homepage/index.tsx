@@ -6,6 +6,7 @@ import Image from "next/image";
 import bannerImage from "../../public/images/banner.png";
 import service1 from "../../public/images/service-1.png";
 import service2 from "../../public/images/service-2.png";
+import service3 from "../../public/images/service-3.png";
 
 const HomePage = () => {
   return (
@@ -27,7 +28,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="flex items-center gap-16">
+      <section className="flex items-center gap-20">
         <Image src={service1} alt="service1" width={500} height={500} />
         <div className="flex flex-col gap-3">
           <h2 className="text-4xl font-bold">What's Included in Nextplate</h2>
@@ -120,7 +121,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="flex flex-row-reverse items-center gap-16">
+      <section className="flex flex-row-reverse items-center gap-20">
         <Image src={service2} alt="service2" width={500} height={500} />
         <div className="flex flex-col gap-3">
           <h2 className="text-4xl font-bold">
@@ -177,6 +178,79 @@ const HomePage = () => {
             <div>
               <ButtonOutline text="Get Started" />
             </div>
+          </ul>
+        </div>
+      </section>
+
+      <section className="flex items-center gap-20">
+        <div>
+          <Image src={service3} alt="service3" width={500} height={500} />
+        </div>
+
+        <div className="flex flex-col gap-3">
+          <h2 className="text-4xl font-bold">
+            The Top Reasons to Choose Next for Your Next Project
+          </h2>
+          <p className="text-xl">
+            With Next, you can build modern and content-focused websites without
+            sacrificing performance or ease of use.
+          </p>
+          <ul className="text-lg flex flex-col gap-2">
+            <li className="flex gap-2 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-check-lg"
+                viewBox="0 0 16 16"
+              >
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+              </svg>
+              Instantly load static sites for better user experience and SEO.
+            </li>
+            <li className="flex gap-2 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-check-lg"
+                viewBox="0 0 16 16"
+              >
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+              </svg>
+              Intuitive syntax and support for popular frameworks make learning
+              and using Next a breeze.
+            </li>
+            <li className="flex gap-2 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-check-lg"
+                viewBox="0 0 16 16"
+              >
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+              </svg>
+              Use any front-end library or framework, or build custom
+              components, for any project size.
+            </li>
+            <li className="flex gap-2 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-check-lg"
+                viewBox="0 0 16 16"
+              >
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+              </svg>
+              Built on cutting-edge technology to keep your projects up-to-date
+              with the latest web standards.
+            </li>
           </ul>
         </div>
       </section>
