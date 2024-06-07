@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
 
-export function ButtonOutline() {
-  return <Button variant="outline">Get Started</Button>;
+export function ButtonOutline({ text }: any) {
+  return <Button variant="outline">{text}</Button>;
 }

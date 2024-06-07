@@ -12,7 +12,7 @@ const HomeLayout: React.FC<HomeLayoutProps> = () => {
   return (
     <>
       <Header />
-      <Container className="flex-grow-1">
+      <Container className="flex-grow-1 max-w-4xl">
         <HomePage />
       </Container>
       <Footer />
