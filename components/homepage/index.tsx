@@ -7,6 +7,7 @@ import bannerImage from "../../public/images/banner.png";
 import service1 from "../../public/images/service-1.png";
 import service2 from "../../public/images/service-2.png";
 import service3 from "../../public/images/service-3.png";
+import callToAction from "../../public/images/call-to-action.png";
 import { CarouselSize } from "../CarouselSize";
 
 const HomePage = () => {
@@ -256,7 +257,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="flex flex-col gap-8 mt-5 text-center max-w-4xl mx-auto">
+      <section className="flex flex-col gap-20 mt-5 text-center max-w-4xl mx-auto">
         <div className="flex flex-col gap-8">
           <h2 className="text-3xl lg:text-5xl font-bold">
             What Users Are Saying About Nextplate
@@ -269,6 +270,30 @@ const HomePage = () => {
         </div>
         <div className="mx-auto">
           <CarouselSize />
+        </div>
+      </section>
+
+      <section className="flex flex-row-reverse items-center gap-20 bg-gray-100 px-24 py-16 rounded-3xl">
+        <div>
+          <Image
+            src={callToAction}
+            alt="callToAction"
+            width={500}
+            height={500}
+          />
+        </div>
+
+        <div className="flex flex-col gap-8">
+          <h2 className="text-4xl font-bold">
+            Ready to build your next project with Next?
+          </h2>
+          <p className="text-lg">
+            Experience the future of web development with Nextplate and Next.
+            Build lightning-fast static sites with ease and flexibility.
+          </p>
+          <div>
+            <ButtonOutline text="Get Started Now"/>
+          </div>
         </div>
       </section>
     </main>
