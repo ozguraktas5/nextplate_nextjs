@@ -7,6 +7,7 @@ import bannerImage from "../../public/images/banner.png";
 import service1 from "../../public/images/service-1.png";
 import service2 from "../../public/images/service-2.png";
 import service3 from "../../public/images/service-3.png";
+import { CarouselSize } from "../CarouselSize";
 
 const HomePage = () => {
   return (
@@ -28,7 +29,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="flex items-center gap-20">
+      <section className="flex items-center gap-20 bg-slate-50 w-screen px-40 py-28">
         <Image src={service1} alt="service1" width={500} height={500} />
         <div className="flex flex-col gap-3">
           <h2 className="text-4xl font-bold">What's Included in Nextplate</h2>
@@ -182,7 +183,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="flex items-center gap-20">
+      <section className="flex items-center gap-20 bg-slate-50 w-screen px-40 py-28">
         <div>
           <Image src={service3} alt="service3" width={500} height={500} />
         </div>
@@ -252,6 +253,22 @@ const HomePage = () => {
               with the latest web standards.
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section className="flex flex-col gap-8 mt-5 text-center max-w-4xl mx-auto">
+        <div className="flex flex-col gap-8">
+          <h2 className="text-3xl lg:text-5xl font-bold">
+            What Users Are Saying About Nextplate
+          </h2>
+          <p>
+            Don't just take our word for it - hear from some of our satisfied
+            users! Check out some of our testimonials below to see what others
+            are saying about Nextplate.
+          </p>
+        </div>
+        <div className="mx-auto">
+          <CarouselSize />
         </div>
       </section>
     </main>
