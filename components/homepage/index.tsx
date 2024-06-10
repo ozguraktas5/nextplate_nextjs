@@ -13,7 +13,7 @@ import { CarouselSize } from "../CarouselSize";
 const HomePage = () => {
   return (
     <main className="flex flex-col items-center gap-40">
-      <section className="flex flex-col gap-4 mt-5 text-center max-w-4xl mx-auto">
+      <section className="flex flex-col gap-4 mt-40 text-center max-w-4xl mx-auto">
         <h1 className="text-3xl lg:text-5xl font-bold">
           The Ultimate Starter Template You Need To Start Your Next Project
         </h1>

@@ -4,9 +4,14 @@ import Image from "next/image";
 
 const AboutPage = () => {
   return (
-    
-    <div className="flex flex-col items-center justify-center gap-4 mt-20">
-      <Image src={avatar} className="mx-auto" alt="avatar" width={270} height={270} />
+    <div className="flex flex-col items-center justify-center gap-4">
+      <Image
+        src={avatar}
+        className="mx-auto mt-40"
+        alt="avatar"
+        width={270}
+        height={270}
+      />
       <h2 className="text-3xl font-bold">Hey, I am John Doe!</h2>
       <p className="w-1/2 text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum
