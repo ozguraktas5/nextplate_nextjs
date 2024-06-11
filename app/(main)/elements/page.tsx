@@ -3,7 +3,10 @@ import { BreadcrumbWithCustomSeparator } from "@/components/BreadcrumbWithCustom
 import { ButtonOutline } from "@/components/ButtonOutline";
 import { TableDemo } from "@/components/TableDemo";
 import { TabsDemo } from "@/components/TabsDemo";
+import Image from "next/image";
 import React from "react";
+import imagePlaceHolder from "../../../public/images/image-placeholder.png";
+import { Video } from "@/components/ui/video";
 
 const ElementsPage = () => {
   const htmlItemsString = `
@@ -255,6 +258,10 @@ const ElementsPage = () => {
         <TableDemo />
         <h3 className="text-3xl font-bold">Collapse</h3>
         <AccordionDemo />
+        <h3 className="text-3xl font-bold">Image</h3>
+        <Image src={imagePlaceHolder} alt="imagePlaceHolder" height={500} width={1200} />
+        <h3 className="text-3xl font-bold">Youtube video</h3>
+        <Video />
       </section>
     </main>
   );

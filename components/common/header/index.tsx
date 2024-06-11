@@ -11,7 +11,7 @@ import { ButtonOutline } from "@/components/ButtonOutline";
 
 const Header = () => {
   return (
-    <Navbar className="fixed w-full" expand="lg" bg="white" data-bs-theme="white" collapseOnSelect>
+    <Navbar className="fixed z-10 w-full" expand="lg" bg="white" data-bs-theme="white" collapseOnSelect>
       <Container>
         <Navbar.Brand href="/" as={Link}>
           <Image
