@@ -1,5 +1,6 @@
 import { BreadcrumbWithCustomSeparator } from "@/components/BreadcrumbWithCustomSeparator";
 import { ButtonOutline } from "@/components/ButtonOutline";
+import { TabsDemo } from "@/components/TabsDemo";
 import React from "react";
 
 const ElementsPage = () => {
@@ -247,6 +248,7 @@ const ElementsPage = () => {
           <p>"This is a simple note."</p>
         </blockquote>
         <h3 className="text-3xl font-bold">Tab</h3>
+        <TabsDemo />
       </section>
     </main>
   );
