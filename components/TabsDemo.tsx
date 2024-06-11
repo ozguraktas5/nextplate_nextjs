@@ -1,9 +1,6 @@
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -11,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export function TabsDemo() {
   return (
-    <Tabs className="w-full p-3">
+    <Tabs defaultValue="tab1" className="w-full p-3">
       <TabsList className="grid w-full grid-cols-3">
         <TabsTrigger value="tab1">Tab 1</TabsTrigger>
         <TabsTrigger value="tab2">Tab 2</TabsTrigger>

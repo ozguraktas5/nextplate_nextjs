@@ -1,5 +1,7 @@
+import { AccordionDemo } from "@/components/AccordionDemo";
 import { BreadcrumbWithCustomSeparator } from "@/components/BreadcrumbWithCustomSeparator";
 import { ButtonOutline } from "@/components/ButtonOutline";
+import { TableDemo } from "@/components/TableDemo";
 import { TabsDemo } from "@/components/TabsDemo";
 import React from "react";
 
@@ -249,6 +251,10 @@ const ElementsPage = () => {
         </blockquote>
         <h3 className="text-3xl font-bold">Tab</h3>
         <TabsDemo />
+        <h3 className="text-3xl font-bold">Table</h3>
+        <TableDemo />
+        <h3 className="text-3xl font-bold">Collapse</h3>
+        <AccordionDemo />
       </section>
     </main>
   );
