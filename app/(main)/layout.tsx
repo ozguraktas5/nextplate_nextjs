@@ -11,7 +11,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
-      <Container className="flex-grow-1">{children}</Container>
+      <div className="flex-grow-1">{children}</div>
       <Footer />
     </>
   );
