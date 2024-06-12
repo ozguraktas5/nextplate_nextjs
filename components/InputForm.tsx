@@ -73,7 +73,7 @@ export function InputForm() {
             <FormItem>
               <FormLabel className="font-bold">Working Mail</FormLabel>
               <FormControl>
-                <Input placeholder="" {...field} />
+                <Input placeholder="Enter your email" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
