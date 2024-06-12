@@ -70,7 +70,7 @@ const BlogPage = () => {
       </section>
 
       <section className="mt-5">
-        <div className="flex mb-5">
+        <div className="flex gap-4 px-36 mb-5 ">
           {currentPosts.map((post) => (
             <div key={post.id} className="flex flex-col gap-3">
               <Image
@@ -130,6 +130,62 @@ const BlogPage = () => {
               </div>
             </div>
           ))}
+          <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5">
+              <h3 className="text-2xl font-bold">Categories</h3>
+              <div className="p-4 bg-gray-100">
+                <ul>
+                  <li>
+                    <a href="">
+                      Application <span>(1)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Data <span>(2)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Technology <span>(1)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Software <span>(1)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Architecture <span>(1)</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="flex flex-col gap-5">
+              <h3 className="text-2xl font-bold">Tags</h3>
+              <div className="p-4 bg-gray-100">
+                <ul>
+                  <li>
+                    <a href="">Nextjs</a>
+                  </li>
+                  <li>
+                    <a href="">Tailwind</a>
+                  </li>
+                  <li>
+                    <a href="">Technology</a>
+                  </li>
+                  <li>
+                    <a href="">Software</a>
+                  </li>
+                  <li>
+                    <a href="">Silicon</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
         <PaginationDemo
           currentPage={currentPage}
@@ -151,7 +207,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 
-export function PaginationDemo({ currentPage, onPageChange }) {
+export function PaginationDemo({ currentPage, onPageChange }: any) {
   return (
     <Pagination>
       <PaginationContent>
