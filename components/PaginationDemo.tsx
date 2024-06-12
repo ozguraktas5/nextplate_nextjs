@@ -7,23 +7,32 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 
-export function PaginationDemo() {
+export function PaginationDemo({ currentPage, onPageChange }: any) {
   return (
     <Pagination>
       <PaginationContent>
         <PaginationItem>
-          <PaginationPrevious href="#" />
+          <PaginationPrevious
+            href="#"
+            onClick={() => onPageChange(currentPage - 1)}
+          />
         </PaginationItem>
+        {[1, 2].map((page) => (
+          <PaginationItem key={page}>
+            <PaginationLink
+              href="#"
+              isActive={page === currentPage}
+              onClick={() => onPageChange(page)}
+            >
+              {page}
+            </PaginationLink>
+          </PaginationItem>
+        ))}
         <PaginationItem>
-          <PaginationLink href="#">1</PaginationLink>
-        </PaginationItem>
-        <PaginationItem>
-          <PaginationLink href="#" isActive>
-            2
-          </PaginationLink>
-        </PaginationItem>
-        <PaginationItem>
-          <PaginationNext href="#" />
+          <PaginationNext
+            href="#"
+            onClick={() => onPageChange(currentPage + 1)}
+          />
         </PaginationItem>
       </PaginationContent>
     </Pagination>
