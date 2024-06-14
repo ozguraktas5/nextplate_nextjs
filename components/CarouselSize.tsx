@@ -23,7 +23,7 @@ export function CarouselSize() {
         {Array.from({ length: 4 }).map((_, index) => (
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
             <div className="p-1">
-              <Card className="bg-gray-50">
+              <Card className="bg-gray-100 dark:bg-black">
                 <CardContent className="flex flex-col aspect-square gap-6 items-center justify-center p-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

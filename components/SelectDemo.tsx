@@ -5,7 +5,6 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
@@ -13,13 +12,13 @@ import {
 export function SelectDemo() {
   return (
     <Select>
-      <SelectTrigger className="w-[100px]">
-        <SelectValue placeholder="English" />
+      <SelectTrigger className="w-[90px]">
+        <SelectValue placeholder="Eng" />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
-          <SelectItem value="english">English</SelectItem>
-          <SelectItem value="french">French</SelectItem>
+          <SelectItem value="eng">Eng</SelectItem>
+          <SelectItem value="fre">Fre</SelectItem>
         </SelectGroup>
       </SelectContent>
     </Select>

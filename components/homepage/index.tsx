@@ -9,6 +9,8 @@ import service2 from "../../public/images/service-2.png";
 import service3 from "../../public/images/service-3.png";
 import callToAction from "../../public/images/call-to-action.png";
 import { CarouselSize } from "../CarouselSize";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const HomePage = () => {
   return (
@@ -22,15 +24,17 @@ const HomePage = () => {
           providing everything you need to jumpstart your Next project and save
           valuable time.
         </p>
-        <div className="text-center">
-          <ButtonOutline text="Get Started For Free" />
+        <div className="text-center mt-3">
+          <Button variant="outline" size="lg">
+              <Link href="https://github.com/ozguraktas5/nextplate_nextjs">Get Started For Free</Link>
+          </Button>
         </div>
-        <div>
+        <div className="mt-3">
           <Image src={bannerImage} alt="bannerImage" width={800} height={800} />
         </div>
       </section>
 
-      <section className="flex items-center gap-20 bg-slate-50 w-screen px-40 py-28">
+      <section className="flex items-center bg-gray-100 dark:bg-gray-950 gap-20 w-screen px-40 py-28">
         <Image src={service1} alt="service1" width={500} height={500} />
         <div className="flex flex-col gap-3">
           <h2 className="text-4xl font-bold">What's Included in Nextplate</h2>
@@ -184,7 +188,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="flex items-center gap-20 bg-slate-50 w-screen px-40 py-28">
+      <section className="flex items-center gap-20 bg-gray-100 dark:bg-gray-950 w-screen px-40 py-28">
         <div>
           <Image src={service3} alt="service3" width={500} height={500} />
         </div>
@@ -273,7 +277,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="flex flex-row-reverse items-center gap-20 bg-gray-100 px-24 py-16 rounded-3xl">
+      <section className="flex flex-row-reverse items-center gap-20 bg-gray-100 dark:bg-gray-950 px-24 py-16 rounded-3xl">
         <div>
           <Image
             src={callToAction}
