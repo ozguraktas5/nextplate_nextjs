@@ -71,3 +71,15 @@ html,
 body {
   overflow-x: hidden;
 }
+
+.dark .navbar-brand .dark\:hidden {
+  display: none;
+}
+
+.dark .navbar-brand .dark\:block {
+  display: block;
+}
+
+.navbar-brand .hidden {
+  display: none;
+}
