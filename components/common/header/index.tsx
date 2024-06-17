@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
@@ -13,7 +13,7 @@ import { ButtonOutline } from "@/components/ButtonOutline";
 const Header = () => {
   return (
     <Navbar
-      className="fixed z-10 w-full bg-white dark:bg-black"
+      className="fixed z-10 w-full dark:bg-black"
       expand="lg"
       collapseOnSelect
     >
@@ -38,60 +38,27 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             {menuItems.map((item) => (
-              <Nav.Link
-                key={item.id}
-                href={item.url}
-                as={Link}
-                className="text-black dark:text-white"
-              >
+              <Nav.Link key={item.id} href={item.url} as={Link}>
                 {item.title}
               </Nav.Link>
             ))}
-            <NavDropdown
-              title="Pages"
-              id="basic-nav-dropdown"
-              className="text-black dark:text-white"
-            >
-              <NavDropdown.Item
-                href="/pages/contact"
-                as={Link}
-                className="text-black dark:text-white"
-              >
+            <NavDropdown title="Pages" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/pages/contact" as={Link}>
                 Contact
               </NavDropdown.Item>
-              <NavDropdown.Item
-                href="/pages/blog"
-                as={Link}
-                className="text-black dark:text-white"
-              >
+              <NavDropdown.Item href="/pages/blog" as={Link}>
                 Blog
               </NavDropdown.Item>
-              <NavDropdown.Item
-                href="/pages/authors"
-                as={Link}
-                className="text-black dark:text-white"
-              >
+              <NavDropdown.Item href="/pages/authors" as={Link}>
                 Authors
               </NavDropdown.Item>
-              <NavDropdown.Item
-                href="/pages/categories"
-                as={Link}
-                className="text-black dark:text-white"
-              >
+              <NavDropdown.Item href="/pages/categories" as={Link}>
                 Categories
               </NavDropdown.Item>
-              <NavDropdown.Item
-                href="/pages/tags"
-                as={Link}
-                className="text-black dark:text-white"
-              >
+              <NavDropdown.Item href="/pages/tags" as={Link}>
                 Tags
               </NavDropdown.Item>
-              <NavDropdown.Item
-                href="/pages/error"
-                as={Link}
-                className="text-black dark:text-white"
-              >
+              <NavDropdown.Item href="/pages/error" as={Link}>
                 404 Page
               </NavDropdown.Item>
             </NavDropdown>
