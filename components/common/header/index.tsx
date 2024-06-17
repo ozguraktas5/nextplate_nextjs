@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import menuItems from "./menu.json";
 import Image from "next/image";
@@ -11,9 +11,12 @@ import { SelectDemo } from "@/components/SelectDemo";
 import { ButtonOutline } from "@/components/ButtonOutline";
 
 const Header = () => {
+
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
     <Navbar
-      className="fixed z-10 w-full dark:bg-black"
+      className={`fixed z-10 w-full ${darkMode ? 'dark:bg-black' : ''}`}
       expand="lg"
       collapseOnSelect
     >
@@ -42,7 +45,11 @@ const Header = () => {
                 {item.title}
               </Nav.Link>
             ))}
-            <NavDropdown title="Pages" id="basic-nav-dropdown">
+            <NavDropdown
+              title="Pages"
+              id="basic-nav-dropdown"
+              className={darkMode ? 'dropdown-menu' : ''}
+            >
               <NavDropdown.Item href="/pages/contact" as={Link}>
                 Contact
               </NavDropdown.Item>
