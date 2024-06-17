@@ -36,7 +36,7 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <div className="flex gap-4 items-center me-auto ml-20">
             {menuItems.map((item) => (
               <Nav.Link key={item.id} href={item.url} as={Link}>
                 {item.title}
@@ -62,7 +62,7 @@ const Header = () => {
                 404 Page
               </NavDropdown.Item>
             </NavDropdown>
-          </Nav>
+          </div>
         </Navbar.Collapse>
         <div className="flex gap-2">
           <SearchModal />

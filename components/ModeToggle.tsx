@@ -17,9 +17,14 @@ export function ModeToggle() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button size="icon" className="bg-white text-black">
-          <Sun className="h-[1rem] w-[1rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <Moon className="absolute h-[1rem] w-[1rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+        <Button
+          size="icon"
+          className="relative flex items-center justify-center p-2 bg-white text-black dark:bg-black dark:text-white"
+        >
+          <Sun className="h-[1rem] w-[1rem] transition-all dark:hidden" />
+          <div className="absolute inset-0 flex items-center justify-center dark:bg-black">
+            <Moon className="h-[1rem] w-[1rem] transition-all hidden dark:block text-white" />
+          </div>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
@@ -36,4 +41,3 @@ export function ModeToggle() {
     </DropdownMenu>
   );
 }
-
