@@ -136,7 +136,7 @@ const BlogPage = () => {
           <div className="flex flex-col gap-5 w-1/3">
             <div className="flex flex-col gap-3">
               <h3 className="text-2xl font-bold">Categories</h3>
-              <div className="p-4 bg-gray-100">
+              <div className="p-4 bg-gray-100 dark:bg-gray-950">
                 <ul className="flex flex-col gap-3">
                   <li>
                     <a href="" className="flex justify-between">
@@ -168,21 +168,21 @@ const BlogPage = () => {
             </div>
             <div className="flex flex-col gap-3">
               <h3 className="text-2xl font-bold">Tags</h3>
-              <div className="p-4 bg-gray-100">
+              <div className="p-4 bg-gray-100 dark:bg-gray-950">
                 <ul className="flex flex-wrap gap-4">
-                  <li className="inline-block p-2 bg-gray-50 hover:bg-gray-500 hover:text-white rounded-xl">
+                  <li className="inline-block p-2 bg-gray-50 hover:bg-gray-500 hover:text-white rounded-xl dark:bg-gray-950">
                     <a href="">Nextjs</a>
                   </li>
-                  <li className="inline-block p-2 bg-gray-50 hover:bg-gray-500 hover:text-white rounded-xl">
+                  <li className="inline-block p-2 bg-gray-50 hover:bg-gray-500 hover:text-white rounded-xl dark:bg-gray-950">
                     <a href="">Tailwind</a>
                   </li>
-                  <li className="inline-block p-2 bg-gray-50 hover:bg-gray-500 hover:text-white rounded-xl">
+                  <li className="inline-block p-2 bg-gray-50 hover:bg-gray-500 hover:text-white rounded-xl dark:bg-gray-950">
                     <a href="">Technology</a>
                   </li>
-                  <li className="inline-block p-2 bg-gray-50 hover:bg-gray-500 hover:text-white rounded-xl">
+                  <li className="inline-block p-2 bg-gray-50 hover:bg-gray-500 hover:text-white rounded-xl dark:bg-gray-950">
                     <a href="">Software</a>
                   </li>
-                  <li className="inline-block p-2 bg-gray-50 hover:bg-gray-500 hover:text-white rounded-xl">
+                  <li className="inline-block p-2 bg-gray-50 hover:bg-gray-500 hover:text-white rounded-xl dark:bg-gray-950">
                     <a href="">Silicon</a>
                   </li>
                 </ul>
