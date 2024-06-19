@@ -12,7 +12,7 @@ const AuthorsPage = () => {
       </section>
 
       <section className="flex gap-24 px-40 mt-5">
-        <div className="flex flex-col items-center p-4 justify-center gap-4 bg-gray-100">
+        <div className="flex flex-col items-center p-4 justify-center gap-4 bg-gray-100 dark:bg-gray-950">
           <Image
             src={avatar}
             className="mx-auto"
@@ -65,7 +65,7 @@ const AuthorsPage = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-center p-4 justify-center gap-4 bg-gray-100">
+        <div className="flex flex-col items-center p-4 justify-center gap-4 bg-gray-100 dark:bg-gray-950">
           <Image
             src={avatar}
             className="mx-auto"
@@ -118,7 +118,7 @@ const AuthorsPage = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-center p-4 justify-center gap-4 bg-gray-100">
+        <div className="flex flex-col items-center p-4 justify-center gap-4 bg-gray-100 dark:bg-gray-950">
           <Image
             src={avatar}
             className="mx-auto"
