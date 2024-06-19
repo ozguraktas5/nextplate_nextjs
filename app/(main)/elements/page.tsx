@@ -155,19 +155,19 @@ const ElementsPage = () => {
         <h3 className="text-3xl font-bold">HTML</h3>
         <pre>
           <code>
-            <ul className="bg-gray-100 p-1">{htmlItemsString}</ul>
+            <ul className="bg-gray-100 dark:bg-gray-950 p-1">{htmlItemsString}</ul>
           </code>
         </pre>
         <h3 className="text-3xl font-bold">CSS</h3>
         <pre>
           <code>
-            <ul className="bg-gray-100 p-1">{cssItemsString}</ul>
+            <ul className="bg-gray-100 dark:bg-gray-950 p-1">{cssItemsString}</ul>
           </code>
         </pre>
         <h3 className="text-3xl font-bold">Javascript</h3>
         <pre>
           <code>
-            <ul className="bg-gray-100 p-1">{jsItemsString}</ul>
+            <ul className="bg-gray-100 dark:bg-gray-950 p-1">{jsItemsString}</ul>
           </code>
         </pre>
         <hr className="text-gray-400" />
@@ -176,7 +176,7 @@ const ElementsPage = () => {
           <ButtonOutline text="Button" />
         </div>
         <h3 className="text-3xl font-bold">Quote</h3>
-        <blockquote className="border-black rounded-xl border-t-2 border-r-2 border-b-2 border-l-8 p-5 bg-gray-100">
+        <blockquote className="border-black rounded-xl border-t-2 border-r-2 border-b-2 border-l-8 p-5 bg-gray-100 dark:bg-gray-950">
           <p className="font-bold">
             "Did you come here for something in particular or just general
             Riker-bashing? And blowing into maximum warp speed, you appeared for
