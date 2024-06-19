@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 
-const SearchModal = () => {
+const SearchModal = ({ darkMode }: any) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -24,7 +24,11 @@ const SearchModal = () => {
         </svg>
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        className={darkMode ? "dark-modal" : "light-modal"}
+      >
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <Form>
