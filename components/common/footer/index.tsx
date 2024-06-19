@@ -1,14 +1,23 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import footerMenuItems from "./footer-menu.json";
 import { Nav } from "react-bootstrap";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 
 const Footer = () => {
-  const { theme } = useTheme();
+  const { theme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div className="mt-32">
@@ -17,7 +26,7 @@ const Footer = () => {
           <a href="/">
             <Image
               src={
-                theme === "dark"
+                resolvedTheme === "dark"
                   ? "/images/logo-darkmode.png"
                   : "/images/logo.png"
               }
