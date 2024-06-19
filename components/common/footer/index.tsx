@@ -5,15 +5,22 @@ import React from "react";
 import footerMenuItems from "./footer-menu.json";
 import { Nav } from "react-bootstrap";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 
 const Footer = () => {
+  const { theme } = useTheme();
+
   return (
     <div className="mt-32">
-      <div className="flex justify-around items-center bg-gray-100 p-5">
+      <div className="flex justify-around items-center bg-gray-100 dark:bg-black p-5">
         <div>
           <a href="/">
             <Image
-              src="/images/logo.png"
+              src={
+                theme === "dark"
+                  ? "/images/logo-darkmode.png"
+                  : "/images/logo.png"
+              }
               alt="Nextplate"
               width={200}
               height={35}
@@ -83,7 +90,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="text-center bg-gray-100 p-5 border-t-2">
+      <div className="text-center bg-gray-100 dark:bg-black p-5 border-t-2 dark:border-gray-800">
         Designed And Developed by Zeon Studio
       </div>
     </div>
