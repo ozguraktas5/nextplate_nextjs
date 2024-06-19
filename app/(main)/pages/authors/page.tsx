@@ -6,7 +6,7 @@ import avatar from "../../../../public/images/avatar.png";
 const AuthorsPage = () => {
   return (
     <main>
-      <section className="flex flex-col items-center bg-gray-100 p-24">
+      <section className="flex flex-col items-center bg-gray-100 p-24 dark:bg-gray-950">
         <h1 className="text-5xl pt-24 font-bold mb-3">Authors</h1>
         <BreadcrumbWithCustomSeparator text="Authors" />
       </section>

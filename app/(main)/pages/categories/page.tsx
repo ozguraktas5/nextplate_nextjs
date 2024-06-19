@@ -4,7 +4,7 @@ import React from "react";
 const CategoriesPage = () => {
   return (
     <main>
-      <section className="flex flex-col items-center bg-gray-100 p-24">
+      <section className="flex flex-col items-center bg-gray-100 p-24 dark:bg-gray-950">
         <h1 className="text-5xl pt-24 font-bold mb-3">Categories</h1>
         <BreadcrumbWithCustomSeparator text="Categories" />
       </section>
