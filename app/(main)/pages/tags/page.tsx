@@ -13,28 +13,28 @@ const TagsPage = () => {
         <div>
           <ul className="flex flex-wrap justify-center mt-32 gap-5">
             <li>
-              <a href="" className="bg-gray-100 text-xl px-10 py-3 rounded-xl">
-                Nextjs <span className="ml-3 px-3 bg-gray-50">1</span>{" "}
+              <a href="" className="bg-gray-100 dark:bg-gray-950 text-xl px-10 py-3 rounded-xl">
+                Nextjs <span className="ml-3 px-3 bg-gray-50 dark:bg-gray-950">1</span>{" "}
               </a>
             </li>
             <li>
-              <a href="" className="bg-gray-100 text-xl px-10 py-3 rounded-xl">
-                Tailwind <span className="ml-3 px-3 bg-gray-50">3</span>{" "}
+              <a href="" className="bg-gray-100 dark:bg-gray-950 text-xl px-10 py-3 rounded-xl">
+                Tailwind <span className="ml-3 px-3 bg-gray-50 dark:bg-gray-950">3</span>{" "}
               </a>
             </li>
             <li>
-              <a href="" className="bg-gray-100 text-xl px-10 py-3 rounded-xl">
-                Technology <span className="ml-3 px-3 bg-gray-50">2</span>{" "}
+              <a href="" className="bg-gray-100 dark:bg-gray-950 text-xl px-10 py-3 rounded-xl">
+                Technology <span className="ml-3 px-3 bg-gray-50 dark:bg-gray-950">2</span>{" "}
               </a>
             </li>
             <li>
-              <a href="" className="bg-gray-100 text-xl px-10 py-3 rounded-xl">
-                Software <span className="ml-3 px-3 bg-gray-50">1</span>{" "}
+              <a href="" className="bg-gray-100 dark:bg-gray-950 text-xl px-10 py-3 rounded-xl">
+                Software <span className="ml-3 px-3 bg-gray-50 dark:bg-gray-950">1</span>{" "}
               </a>
             </li>
             <li>
-              <a href="" className="bg-gray-100 text-xl px-10 py-3 rounded-xl">
-                Silicon <span className="ml-3 px-3 bg-gray-50">1</span>{" "}
+              <a href="" className="bg-gray-100 dark:bg-gray-950 text-xl px-10 py-3 rounded-xl">
+                Silicon <span className="ml-3 px-3 bg-gray-50 dark:bg-gray-950">1</span>{" "}
               </a>
             </li>
           </ul>
