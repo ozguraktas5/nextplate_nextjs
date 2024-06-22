@@ -11,22 +11,24 @@ import callToAction from "../../public/images/call-to-action.png";
 import { CarouselSize } from "../CarouselSize";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { GetStaticProps } from "next";
+import path from "path";
+import fs from "fs";
 
 const HomePage = () => {
+  const { t } = useTranslation("common");
   return (
     <main className="flex flex-col items-center gap-40">
       <section className="flex flex-col gap-4 mt-40 text-center max-w-4xl mx-auto">
-        <h1 className="text-3xl lg:text-5xl font-bold">
-          The Ultimate Starter Template You Need To Start Your Next Project
-        </h1>
-        <p>
-          Nextplate is a free starter template built with Next and TailwindCSS,
-          providing everything you need to jumpstart your Next project and save
-          valuable time.
-        </p>
+        <h1 className="text-3xl lg:text-5xl font-bold">{t("title")}</h1>
+        <p>{t("description")}</p>
         <div className="text-center mt-3">
           <Button variant="outline" size="lg">
-              <Link href="https://github.com/ozguraktas5/nextplate_nextjs">Get Started For Free</Link>
+            <Link href="https://github.com/ozguraktas5/nextplate_nextjs">
+              Get Started For Free
+            </Link>
           </Button>
         </div>
         <div className="mt-3">
@@ -296,12 +298,24 @@ const HomePage = () => {
             Build lightning-fast static sites with ease and flexibility.
           </p>
           <div>
-            <ButtonOutline text="Get Started Now"/>
+            <ButtonOutline text="Get Started Now" />
           </div>
         </div>
       </section>
     </main>
   );
+};
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const filePath = path.join(process.cwd(), "data", "example.txt");
+  const fileContent = fs.readFileSync(filePath, "utf8");
+
+  return {
+    props: {
+      ...(await serverSideTranslations(locale!, ["common"])),
+      fileContent,
+    },
+  };
 };
 
 export default HomePage;
