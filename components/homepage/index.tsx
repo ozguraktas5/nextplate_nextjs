@@ -307,12 +307,12 @@ const HomePage = () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const filePath = path.join(process.cwd(), "data", "example.txt");
-  const fileContent = fs.readFileSync(filePath, "utf8");
+  const filePath = path.join(process.cwd(), 'data', 'example.txt');
+  const fileContent = fs.readFileSync(filePath, 'utf8');
 
   return {
     props: {
-      ...(await serverSideTranslations(locale!, ["common"])),
+      ...(await serverSideTranslations(locale!, ['common'])),
       fileContent,
     },
   };
