@@ -1,6 +1,6 @@
-Nextplate: Ücretsiz Başlangıç Şablonu
+Nextplate: Ücretsiz Başlangıç Şablonu <br>
 
-Teknolojiler
+Teknolojiler  <br>
 
 Next.js ve TypeScript kullanılarak oluşturulmuştur.
 TailwindCSS ile stil verilmiştir.
