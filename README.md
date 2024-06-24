@@ -2,19 +2,19 @@ Nextplate: Ücretsiz Başlangıç Şablonu <br>
 
 Teknolojiler  <br>
 
-Next.js ve TypeScript kullanılarak oluşturulmuştur.
-TailwindCSS ile stil verilmiştir.
-Özellikler
+Next.js ve TypeScript kullanılarak oluşturulmuştur. <br>
+TailwindCSS ile stil verilmiştir. <br>
+Özellikler <br>
 
-Input
-Carousel
-Accordion
-Button
-Toggle
-Modal
-Kütüphaneler ve Araçlar
+Input <br>
+Carousel <br>
+Accordion <br> 
+Button <br>
+Toggle <br>
+Modal <br>
+Kütüphaneler ve Araçlar <br>
 
 shadcn: Input, carousel, accordion, button, toggle ve modal yapıları oluşturmak için kullanıldı.
-React Bootstrap: İkonlar için kullanıldı.
-Zod: Form validasyon işlemleri için kullanıldı.
-Vercel: Deploy işlemleri için kullanıldı.
+React Bootstrap: İkonlar için kullanıldı. <br>
+Zod: Form validasyon işlemleri için kullanıldı. <br>
+Vercel: Deploy işlemleri için kullanıldı. <br>
