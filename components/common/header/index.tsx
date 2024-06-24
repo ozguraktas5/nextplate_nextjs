@@ -7,7 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 import SearchModal from "@/components/SearchModal";
 import { ModeToggle } from "@/components/ModeToggle";
-import { SelectDemo } from "@/components/SelectDemo";
 import { ButtonOutline } from "@/components/ButtonOutline";
 
 const Header = () => {
@@ -15,7 +14,7 @@ const Header = () => {
 
   return (
     <Navbar
-      className={`fixed z-10 w-full ${darkMode ? 'dark:bg-black' : 'bg-white'}`}
+      className={`fixed z-10 w-full ${darkMode ? "dark:bg-black" : "bg-white"}`}
       expand="lg"
       collapseOnSelect
     >
@@ -47,47 +46,47 @@ const Header = () => {
             <NavDropdown
               title="Pages"
               id="basic-nav-dropdown"
-              className={`${darkMode ? 'dark-dropdown' : 'light-dropdown'}`}
+              className={`${darkMode ? "dark-dropdown" : "light-dropdown"}`}
             >
               <NavDropdown.Item
                 href="/pages/contact"
                 as={Link}
-                className={darkMode ? 'dark-item' : 'light-item'}
+                className={darkMode ? "dark-item" : "light-item"}
               >
                 Contact
               </NavDropdown.Item>
               <NavDropdown.Item
                 href="/pages/blog"
                 as={Link}
-                className={darkMode ? 'dark-item' : 'light-item'}
+                className={darkMode ? "dark-item" : "light-item"}
               >
                 Blog
               </NavDropdown.Item>
               <NavDropdown.Item
                 href="/pages/authors"
                 as={Link}
-                className={darkMode ? 'dark-item' : 'light-item'}
+                className={darkMode ? "dark-item" : "light-item"}
               >
                 Authors
               </NavDropdown.Item>
               <NavDropdown.Item
                 href="/pages/categories"
                 as={Link}
-                className={darkMode ? 'dark-item' : 'light-item'}
+                className={darkMode ? "dark-item" : "light-item"}
               >
                 Categories
               </NavDropdown.Item>
               <NavDropdown.Item
                 href="/pages/tags"
                 as={Link}
-                className={darkMode ? 'dark-item' : 'light-item'}
+                className={darkMode ? "dark-item" : "light-item"}
               >
                 Tags
               </NavDropdown.Item>
               <NavDropdown.Item
                 href="/pages/error"
                 as={Link}
-                className={darkMode ? 'dark-item' : 'light-item'}
+                className={darkMode ? "dark-item" : "light-item"}
               >
                 404 Page
               </NavDropdown.Item>
@@ -97,7 +96,6 @@ const Header = () => {
         <div className="flex gap-2">
           <SearchModal darkMode={darkMode} />
           <ModeToggle setDarkMode={setDarkMode} />
-          <SelectDemo />
           <ButtonOutline text="Get Started" />
         </div>
       </Container>
