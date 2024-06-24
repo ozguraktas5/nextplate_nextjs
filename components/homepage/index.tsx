@@ -39,10 +39,10 @@ const HomePage = () => {
       <section className="flex items-center bg-gray-100 dark:bg-gray-950 gap-20 w-screen px-40 py-28">
         <Image src={service1} alt="service1" width={500} height={500} />
         <div className="flex flex-col gap-3">
-          <h2 className="text-4xl font-bold">What's Included in Nextplate</h2>
+          <h2 className="text-4xl font-bold">What&apos;s Included in Nextplate</h2>
           <p className="text-xl">
             Nextplate is a comprehensive starter template that includes
-            everything you need to get started with your Next project. What's
+            everything you need to get started with your Next project. What&apos;s
             Included in Nextplate
           </p>
           <ul className="text-lg flex flex-col gap-2">
@@ -269,7 +269,7 @@ const HomePage = () => {
             What Users Are Saying About Nextplate
           </h2>
           <p>
-            Don't just take our word for it - hear from some of our satisfied
+            Don&apos;t just take our word for it - hear from some of our satisfied
             users! Check out some of our testimonials below to see what others
             are saying about Nextplate.
           </p>

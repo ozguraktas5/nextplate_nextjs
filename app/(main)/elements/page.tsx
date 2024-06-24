@@ -54,7 +54,7 @@ const ElementsPage = () => {
           Did you come here for something in particular or just general
           Riker-bashing? And blowing into maximum warp speed, you appeared for
           an instant to be in two places at once. We have a saboteur aboard. We
-          know you’re dealing in stolen ore. But I wanna talk about the
+          know you&apos;re dealing in stolen ore. But I wanna talk about the
           assassination attempt on Lieutenant Worf. Could someone survive inside
           a transporter buffer for 75 years? Fate. It protects fools, little
           children, and ships.
@@ -63,7 +63,7 @@ const ElementsPage = () => {
           Did you come here for something in particular or just general
           Riker-bashing? And blowing into maximum warp speed, you appeared for
           an instant to be in two places at once. We have a saboteur aboard. We
-          know you’re dealing in stolen ore. But I wanna talk about the
+          know you&apos;re dealing in stolen ore. But I wanna talk about the
           assassination attempt on Lieutenant Worf. Could someone survive inside
           a transporter buffer for 75 years? Fate. It protects fools, little
           children, and ships.
@@ -102,22 +102,22 @@ const ElementsPage = () => {
         <h3 className="text-3xl font-bold">Link</h3>
         <p>
           <a href="https://www.google.com" className="underline">
-            I'm an inline-style link
+            I&apos;m an inline-style link
           </a>
         </p>
         <p>
           <a href="https://www.google.com" className="underline">
-            I'm an inline-style link with title
+            I&apos;m an inline-style link with title
           </a>
         </p>
         <p>
           <a href="https://www.google.com" className="underline">
-            I'm a reference-style link
+            I&apos;m a reference-style link
           </a>
         </p>
         <p>
           <a href="https://www.google.com" className="underline">
-            I'm a relative reference to a repository file
+            I&apos;m a relative reference to a repository file
           </a>
         </p>
         <p>
@@ -178,9 +178,9 @@ const ElementsPage = () => {
         <h3 className="text-3xl font-bold">Quote</h3>
         <blockquote className="border-black rounded-xl border-t-2 border-r-2 border-b-2 border-l-8 p-5 bg-gray-100 dark:bg-gray-950">
           <p className="font-bold">
-            "Did you come here for something in particular or just general
+            &quot;Did you come here for something in particular or just general
             Riker-bashing? And blowing into maximum warp speed, you appeared for
-            an instant to be in two places at once."
+            an instant to be in two places at once.&quot;
           </p>
         </blockquote>
         <h3 className="text-3xl font-bold">Notice</h3>
@@ -199,7 +199,7 @@ const ElementsPage = () => {
             </svg>
             <span className="text-xl font-bold">Note</span>
           </div>
-          <p>"This is a simple note."</p>
+          <p>&quot;This is a simple note.&quot;</p>
         </blockquote>
         <blockquote className="border-emerald-400 rounded-xl border-2 p-5">
           <div className="flex items-center gap-4 mb-3">
@@ -216,7 +216,7 @@ const ElementsPage = () => {
             </svg>
             <span className="text-xl font-bold">Tip</span>
           </div>
-          <p>"This is a simple note."</p>
+          <p>&quot;This is a simple note.&quot;</p>
         </blockquote>
         <blockquote className="border-orange-400 rounded-xl border-2 p-5">
           <div className="flex items-center gap-4 mb-3">
@@ -233,7 +233,7 @@ const ElementsPage = () => {
             </svg>
             <span className="text-xl font-bold">Info</span>
           </div>
-          <p>"This is a simple note."</p>
+          <p>&quot;This is a simple note.&quot;</p>
         </blockquote>
         <blockquote className="border-red-400 rounded-xl border-2 p-5">
           <div className="flex items-center gap-4 mb-3">
@@ -250,7 +250,7 @@ const ElementsPage = () => {
             </svg>
             <span className="text-xl font-bold">Warning</span>
           </div>
-          <p>"This is a simple note."</p>
+          <p>&quot;This is a simple note.&quot;</p>
         </blockquote>
         <h3 className="text-3xl font-bold">Tab</h3>
         <TabsDemo />
